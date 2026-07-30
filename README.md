@@ -5,16 +5,19 @@ A tool that programs UPDI-compatible AVR microcontrollers using a Raspberry Pi P
 Setup
 ======
 
+1. Install pyserial on your computer, if it isn't already installed.
 
-Install Micropython on the Pico and copy picoupdibackend.py to the
+2. Install Micropython on the Pico and copy picoupdibackend.py to the
 Pico using a tool like Thonny, ampy, mpremote, or rshell.
 
-The AVR will need power (3.3V) and ground connections.
+3. The AVR will need power (3.3V) and ground connections.
 Also connect the UPDI pin on the AVR to one of the Pico's
 GPIO pins. (Example: Pin 21 on the lower right corner
-of the Pico is GP16).
+of the Pico is GP16). The GP number will need to be supplied
+to picoupdi.
 
-Connect the Pico to your computer and run picoupdi.py.
+4. Connect the Pico to your computer and run picoupdi.py.
+
 
 Example
 ========
